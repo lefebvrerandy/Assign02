@@ -16,11 +16,11 @@ namespace Triangle.Tests
             Assert.AreEqual(5, hyp);
         }
         [TestMethod]
-        [TestCategory("Exception")]
+        [TestCategory("Boundary")]
         public void FindHypotenuseTestException()
         {
             var triangle = new Triangle();
-            double hyp = triangle.FindHypotenuseOfRight(0, -1);
+            double hyp = triangle.FindHypotenuseOfRight(0 , -1);
             Assert.AreEqual(-1, hyp);
         }
     }
