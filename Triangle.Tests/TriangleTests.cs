@@ -11,7 +11,7 @@ namespace Triangle.Tests
         public void FindHypotenuseTest()
         {
             var triangle = new Triangle();
-            int hyp = triangle.FindHypotenuseOfRight(4, 3);
+            double hyp = triangle.FindHypotenuseOfRight(4, 3);
             Assert.AreEqual(5, hyp);
         }
     }
