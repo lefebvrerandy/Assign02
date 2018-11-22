@@ -8,11 +8,20 @@ namespace Triangle.Tests
     public class TriangleTests
     {
         [TestMethod]
-        public void FindHypotenuseTest()
+        [TestCategory("Normal")]
+        public void FindHypotenuseTestNormal()
         {
             var triangle = new Triangle();
             double hyp = triangle.FindHypotenuseOfRight(4, 3);
             Assert.AreEqual(5, hyp);
+        }
+        [TestMethod]
+        [TestCategory("Exception")]
+        public void FindHypotenuseTestException()
+        {
+            var triangle = new Triangle();
+            double hyp = triangle.FindHypotenuseOfRight(0, -1);
+            Assert.AreEqual(-1, hyp);
         }
     }
 }
