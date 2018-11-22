@@ -8,5 +8,9 @@ namespace Triangle
 {
     public class Triangle
     {
+        public int FindHypotenuseOfRight(int v1, int v2)
+        {
+            return 0;
+        }
     }
 }
