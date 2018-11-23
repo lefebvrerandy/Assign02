@@ -7,6 +7,10 @@ namespace Triangle.Tests
     [TestClass]
     public class TriangleTests
     {
+        // /////////////////////////////////////////////////////////////////////////////
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         [TestCategory("FindHypotenuseOfRight")]
         [TestCategory("Normal")]
@@ -16,6 +20,9 @@ namespace Triangle.Tests
             double hyp = triangle.FindHypotenuseOfRight(4, 3);
             Assert.AreEqual(5, hyp);
         }
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         [TestCategory("FindHypotenuseOfRight")]
         [TestCategory("Boundary")]
@@ -26,6 +33,10 @@ namespace Triangle.Tests
             Assert.AreEqual(-1, hyp);
         }
 
+        // /////////////////////////////////////////////////////////////////////////////
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         [TestCategory("FindAreaOfRight")]
         [TestCategory("Normal")]
@@ -34,6 +45,18 @@ namespace Triangle.Tests
             var triangle = new Triangle();
             double area = triangle.FindAreaOfRight(10, 15);
             Assert.AreEqual(75, area);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [TestMethod]
+        [TestCategory("FindAreaOfRight")]
+        [TestCategory("Boundary")]
+        public void FindAreaTestBoundary()
+        {
+            var triangle = new Triangle();
+            double area = triangle.FindAreaOfRight(0, 10);
+            Assert.AreEqual(-1, area);
         }
 
     }
