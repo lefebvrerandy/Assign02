@@ -38,6 +38,9 @@ namespace Triangle
 
             angle3 = 180 - (angle1 + angle2);
 
+            if ((angle3 > 180) || (angle3 <= 0) || (angle1 <= 0) || (angle2 <= 0))
+                angle3 = -1;
+
             return angle3;
         }
     }
