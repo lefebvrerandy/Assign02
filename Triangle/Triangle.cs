@@ -19,5 +19,14 @@ namespace Triangle
 
             return total;
         }
+
+        public double FindAreaOfRight(double side1, double side2)
+        {
+            double area;
+
+            area = 0.5 * (side1 * side2);
+
+            return area;
+        }
     }
 }

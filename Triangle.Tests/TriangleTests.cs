@@ -27,11 +27,13 @@ namespace Triangle.Tests
         }
 
         [TestMethod]
+        [TestCategory("FindAreaOfRight")]
+        [TestCategory("Normal")]
         public void FindAreaTestNormal()
         {
             var triangle = new Triangle();
-            double hyp = triangle.FindAreaOfRight(0, -1);
-            //Assert.AreEqual(-1, hyp);
+            double area = triangle.FindAreaOfRight(10, 15);
+            Assert.AreEqual(75, area);
         }
 
     }
