@@ -1,13 +1,40 @@
-﻿using System;
+﻿/* 
+ * Programmer:      Randy Lefebvre
+ * Course Code:     INFO2180
+ * Solution:        Assign02
+ * Project:         Triangle
+ * Description:     This project holds all methods for calculations.
+ *                  In this class, there are three methods. First one 
+ *                  takes two sides and returns the hypotenuse of a right
+ *                  triangle. Second one takes two sides and returns the area
+ *                  of a right triangle. The third one takes two angles and returns
+ *                  the missing angle of a right triangle. These methods are used in
+ *                  the TriangleForm.cs.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Triangle
+namespace TriangleUI
 {
     public class Triangle
     {
+        /// <summary>
+        /// FindHypotenuseOfRight()
+        /// </summary>
+        /// <param>
+        /// double side1, double side2
+        /// </param>
+        /// <desc>
+        /// This method takes two sides and calculates the hypotenuse of
+        /// a right triangle. Will return -1 if out of bounds.
+        /// </desc>
+        /// <returns>
+        /// total
+        /// </returns>
         public double FindHypotenuseOfRight(double side1, double side2)
         {
             double total;
@@ -20,6 +47,19 @@ namespace Triangle
             return total;
         }
 
+        /// <summary>
+        /// FindAreaOfRight()
+        /// </summary>
+        /// <param>
+        /// double side1, double side2
+        /// </param>
+        /// <desc>
+        /// This method takes the two sides and calculates the area of
+        /// a right triangle. Will return -1 if out of bounds.
+        /// </desc>
+        /// <returns>
+        /// area
+        /// </returns>
         public double FindAreaOfRight(double side1, double side2)
         {
             double area;
@@ -32,7 +72,20 @@ namespace Triangle
             return area;
         }
 
-        public double FindMissingAngle(int angle1, int angle2)
+        /// <summary>
+        /// FindMissingAngle()
+        /// </summary>
+        /// <param>
+        /// double angle1, double angle2
+        /// </param>
+        /// <desc>
+        /// This method takes the two angles and calculates the last angle of
+        /// a right triangle. Will return -1 if out of bounds.
+        /// </desc>
+        /// <returns>
+        /// angle3
+        /// </returns>
+        public double FindMissingAngle(double angle1, double angle2)
         {
             double angle3;
 

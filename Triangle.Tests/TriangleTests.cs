@@ -1,15 +1,27 @@
-﻿using System;
+﻿/* 
+ * Programmer:      Randy Lefebvre
+ * Course Code:     INFO2180
+ * Solution:        Assign02
+ * Project:         Triangle.Tests.cs
+ * Description:     This project holds all the test for the methods in the "Triangle" project.
+ *                  These tests were ran and conducted using the Test Driven Development method.
+ *                  The tests were created first, and then followed by the code in Triangle.cs to
+ *                  pass these tests.
+ * 
+ */
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Triangle;
+using TriangleUI;
 
-namespace Triangle.Tests
+namespace TriangleUI.Tests
 {
     [TestClass]
     public class TriangleTests
     {
         // /////////////////////////////////////////////////////////////////////////////
         /// <summary>
-        /// 
+        /// Testing the function FindHypotenuseOfRight for normal values. 
+        /// Test Passed.
         /// </summary>
         [TestMethod]
         [TestCategory("FindHypotenuseOfRight")]
@@ -21,7 +33,8 @@ namespace Triangle.Tests
             Assert.AreEqual(5, hyp);
         }
         /// <summary>
-        /// 
+        /// Testing the function FindHypotenuseOfRight for boundary values. 
+        /// Test Passed.
         /// </summary>
         [TestMethod]
         [TestCategory("FindHypotenuseOfRight")]
@@ -35,7 +48,8 @@ namespace Triangle.Tests
 
         // /////////////////////////////////////////////////////////////////////////////
         /// <summary>
-        /// 
+        /// Testing the function FindAreaOfRight for normal values. 
+        /// Test Passed.
         /// </summary>
         [TestMethod]
         [TestCategory("FindAreaOfRight")]
@@ -47,7 +61,8 @@ namespace Triangle.Tests
             Assert.AreEqual(75, area);
         }
         /// <summary>
-        /// 
+        /// Testing the function FindAreaOfRight for boundary values. 
+        /// Test Passed.
         /// </summary>
         [TestMethod]
         [TestCategory("FindAreaOfRight")]
@@ -61,7 +76,8 @@ namespace Triangle.Tests
 
         // /////////////////////////////////////////////////////////////////////////////
         /// <summary>
-        /// 
+        /// Testing the function FindMissingAngle for normal values. 
+        /// Test Passed.
         /// </summary>
         [TestMethod]
         [TestCategory("FindMissingAngle")]
@@ -73,7 +89,8 @@ namespace Triangle.Tests
             Assert.AreEqual(42, angle3);
         }
         /// <summary>
-        /// 
+        /// Testing the function FindMissingAngle for boundary values. 
+        /// Test Passed.
         /// </summary>
         [TestMethod]
         [TestCategory("FindMissingAngle")]
