@@ -31,5 +31,14 @@ namespace Triangle
 
             return area;
         }
+
+        public double FindMissingAngle(int angle1, int angle2)
+        {
+            double angle3;
+
+            angle3 = 180 - (angle1 + angle2);
+
+            return angle3;
+        }
     }
 }
