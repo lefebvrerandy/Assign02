@@ -59,5 +59,18 @@ namespace Triangle.Tests
             Assert.AreEqual(-1, area);
         }
 
+        // /////////////////////////////////////////////////////////////////////////////
+        /// <summary>
+        /// 
+        /// </summary>
+        [TestMethod]
+        [TestCategory("FindMissingAngle")]
+        [TestCategory("Normal")]
+        public void FindMissingAngleNormal()
+        {
+            var triangle = new Triangle();
+            double angle3 = triangle.FindMissingAngle(38, 100);
+            Assert.AreEqual(42, angle3);
+        }
     }
 }
