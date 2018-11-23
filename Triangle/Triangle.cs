@@ -26,8 +26,8 @@ namespace Triangle
 
             area = 0.5 * (side1 * side2);
 
-            //if ((area <= 1) || (side1 <= 0) || (side2 <= 0))
-            //    area = -1;
+            if ((area <= 1) || (side1 <= 0) || (side2 <= 0))
+                area = -1;
 
             return area;
         }
