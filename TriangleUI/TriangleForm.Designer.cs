@@ -100,7 +100,6 @@
             this.One_Lbl.Size = new System.Drawing.Size(57, 13);
             this.One_Lbl.TabIndex = 6;
             this.One_Lbl.Text = "Value One";
-            this.One_Lbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // Two_Lbl
             // 

@@ -104,18 +104,5 @@ namespace TriangleUI
             else
                 Three_Txt.Text = value3.ToString();
         }
-
-        /// <summary>
-        /// label1_Click()
-        /// </summary>
-        /// <desc>
-        /// This label event was a mistake when i clicked it in the form, and I cant
-        /// find out how to delete it without breaking the form all together.. 
-        /// This is just an example of my relationship with visual studios. Love-Hate. 
-        /// </desc>
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
